@@ -50,6 +50,38 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+.fa-bars-staggered {
+    font-size: 20px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width:767px) {
+    .fa-bars-staggered{
+     display: inline-block;
+    }
+    header div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+     header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+    #ul li{
+        margin: 10px 0;
+    }
+}
+.display{
+    display: none;
+}
 #landing {
     margin-top: 50px;
     background-color: orange;
@@ -86,20 +118,20 @@ nav ul li a:hover {
     width: 80%;
 }
 
-#landing button, .Get,.send {
+#landing button, .Get, .send {
     padding: 15px 30px;
     margin: 15px;
     cursor: pointer;
     font-size: 18px;
 }
 
-.btn-buy, .Get,.send {
+.btn-buy, .Get, .send {
     background-color: rgb(12, 12, 49);
     border: 0;
     color: white;
 }
 
-.btn-buy:hover, .Get:hover,.send:hover {
+.btn-buy:hover, .Get:hover, .send:hover {
     background-color: rgb(21, 21, 83);
 }
 
@@ -272,24 +304,28 @@ footer li:hover, .fa-brands:hover {
 }
 
 @media(max-width:767px) {
-    .aboutProperty{
+    .aboutProperty {
         flex-direction: column;
     }
+
     .aboutProperty>div {
         width: 100%;
     }
 }
-.input{
+
+.input {
     padding: 15px;
     width: 30%;
     outline: 0;
     border: 1px solid black;
 }
-.input:focus{
+
+.input:focus {
     border: 2px solid rgb(24, 24, 68);
 }
-@media(max-width:768px){
-    .input{
+
+@media(max-width:768px) {
+    .input {
         width: 50%;
     }
 }
