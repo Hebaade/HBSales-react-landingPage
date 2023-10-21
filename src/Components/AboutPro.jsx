@@ -5,12 +5,11 @@ export default function AboutPro() {
       <div className="aboutProperty" >
           <div style={{
               border: "none",
-              width: "600px ",
               gap: "10px",
               textAlign: "start",
               justifyContent: "start",
               alignItems:"start"
-          }}>
+          }} className="firstDiv">
         <h2 style={{fontSize:"32px"}}>What we are offering?</h2>
         <p>Property facilities</p>
         <p className="product">

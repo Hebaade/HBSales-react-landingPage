@@ -58,16 +58,18 @@ nav ul li a:hover {
 }
 
 @media(max-width:767px) {
-    .fa-bars-staggered{
-     display: inline-block;
+    .fa-bars-staggered {
+        display: inline-block;
     }
-    header div{
+
+    header div {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-     header {
+
+    header {
         flex-direction: column;
         justify-content: center;
     }
@@ -76,13 +78,16 @@ nav ul li a:hover {
         flex-direction: column;
         display: none;
     }
-    #ul li{
+
+    #ul li {
         margin: 10px 0;
     }
 }
-.display{
+
+.display {
     display: none;
 }
+
 #landing {
     margin-top: 50px;
     background-color: orange;
@@ -160,7 +165,8 @@ nav ul li a:hover {
         grid-template-rows: repeat(2, auto);
         gap: 0;
     }
-    .we{
+
+    .we {
         font-size: 45px;
     }
 }
@@ -308,10 +314,21 @@ footer li:hover, .fa-brands:hover {
     border: 1px solid gray;
 }
 
+.firstDiv {
+    width: 600px !important;
+    height: fit-content;
+}
+
 @media(max-width:767px) {
     .aboutProperty {
         flex-direction: column;
         justify-content: center;
+        overflow: hidden;
+    }
+
+    .firstDiv {
+        width: 100% !important;
+        margin: 20px 0;
     }
 
     .aboutProperty>div {
