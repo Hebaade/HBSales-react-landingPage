@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: orange;
+    color: white;
+    z-index: 15;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    width: 20%;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#landing {
+    margin-top: 50px;
+    background-color: orange;
+    color: white;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: fit-content;
+    padding: 100px 40px 20px;
+    gap: 20px
+}
+
+#landing img {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.info-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.we {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.prag {
+    font-size: 18px;
+    width: 80%;
+}
+
+#landing button, .Get,.send {
+    padding: 15px 30px;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-buy, .Get,.send {
+    background-color: rgb(12, 12, 49);
+    border: 0;
+    color: white;
+}
+
+.btn-buy:hover, .Get:hover,.send:hover {
+    background-color: rgb(21, 21, 83);
+}
+
+.btn-explore {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-explore:hover {
+    border: 1px solid rgb(12, 12, 49);
+    color: rgb(12, 12, 49);
+}
+
+.img-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@media(max-width:767px) {
+    #landing {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, auto);
+        gap: 0;
+    }
+}
+
+.content {
+    width: 95%;
+    margin: 80px auto;
+    color: black;
+}
+
+.content section {
+    display: flex;
+    width: 100%;
+}
+
+.content section div {
+    width: 50%;
+}
+
+@media(max-width:767px) {
+    .content section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content section div {
+        width: 100%;
+    }
+}
+
+.content img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.content-info {
+    padding: 25px;
+}
+
+.content h2 {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.content p {
+    width: 80%;
+    margin: 10px 0;
+    opacity: 0.8;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    gap: 10px;
+    color: black;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin: 20px;
+    text-align: center;
+}
+
+.contact p {
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.8;
+    line-height: 25px;
+}
+
+footer {
+    display: flex;
+    margin-top: 70px;
+    background-color: rgba(128, 128, 128, 0.212);
+    padding: 40px;
+    justify-content: space-between;
+}
+
+@media(max-width:767px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+footer>div {
+    text-align: center;
+    margin: 10px 0;
+}
+
+footer h2 {
+    margin: 10px;
+}
+
+footer li {
+    opacity: 0.7;
+    margin: 10px 0;
+}
+
+footer li:hover, .fa-brands:hover {
+    cursor: pointer;
+    opacity: 1;
+    color: rgb(15, 15, 65);
+}
+
+.fa-brands {
+    margin: 5px;
+    font-size: 18px;
+}
+
+.aboutProperty {
+    margin-top: 70px;
+    color: black;
+    display: flex;
+    width: 95%;
+    margin: 80px auto;
+    flex-wrap: wrap;
+}
+
+.aboutProperty .product {
+    opacity: 0.8;
+}
+
+.aboutProperty i {
+    font-size: 40px;
+    color: purple;
+    margin: 15px;
+}
+
+.aboutProperty>div {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+@media(max-width:767px) {
+    .aboutProperty{
+        flex-direction: column;
+    }
+    .aboutProperty>div {
+        width: 100%;
+    }
+}
+.input{
+    padding: 15px;
+    width: 30%;
+    outline: 0;
+    border: 1px solid black;
+}
+.input:focus{
+    border: 2px solid rgb(24, 24, 68);
+}
+@media(max-width:768px){
+    .input{
+        width: 50%;
+    }
+}
