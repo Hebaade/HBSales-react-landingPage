@@ -17,7 +17,7 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 15px 20px;
     background-color: orange;
     color: white;
     z-index: 15;
@@ -74,6 +74,7 @@ nav ul li a:hover {
 
     nav ul {
         flex-direction: column;
+        display: none;
     }
     #ul li{
         margin: 10px 0;

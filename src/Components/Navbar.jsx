@@ -5,16 +5,19 @@ export default function Navbar() {
 
   
   const Click = () => {
-    document.getElementById("ul").classList.toggle("display");
+    document.getElementById("ul").style.display="flex";
   }
+  const DbClick = () => {
+    document.getElementById("ul").style.display="none";
+   }
   return (
     <header>
       <div>
         <h2>HBSales</h2>
-        <i className="fa-solid fa-bars-staggered" onClick={()=>Click()}></i>
+        <i className="fa-solid fa-bars-staggered" onClick={() => Click()} onDoubleClick={()=>DbClick()}></i>
       </div>
       <nav>
-        <ul id="ul" className="">
+        <ul id="ul">
           <li>
             <Link to="/">Home</Link>
           </li>

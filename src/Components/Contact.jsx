@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom'
 export default function Contact() {
   return (
     <div className="contact">
@@ -7,8 +7,10 @@ export default function Contact() {
         It is our commitment to ensure a professional and enjoyable new home
         buying experience for you. If you want to get a home to start living as
         a family in an area that you love click the button below.
-          </p>
-          <button className="Get">Get In Touch</button>
+      </p>
+      <Link className="Get" to="/contact">
+        Get In Touch
+      </Link>
     </div>
   );
 }
