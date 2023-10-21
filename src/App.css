@@ -160,6 +160,9 @@ nav ul li a:hover {
         grid-template-rows: repeat(2, auto);
         gap: 0;
     }
+    .we{
+        font-size: 45px;
+    }
 }
 
 .content {
@@ -284,6 +287,7 @@ footer li:hover, .fa-brands:hover {
 
 .aboutProperty .product {
     opacity: 0.8;
+    width: 80%;
 }
 
 .aboutProperty i {
