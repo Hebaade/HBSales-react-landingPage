@@ -311,6 +311,7 @@ footer li:hover, .fa-brands:hover {
 @media(max-width:767px) {
     .aboutProperty {
         flex-direction: column;
+        justify-content: center;
     }
 
     .aboutProperty>div {
