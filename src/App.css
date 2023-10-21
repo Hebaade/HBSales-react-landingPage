@@ -316,7 +316,7 @@ footer li:hover, .fa-brands:hover {
 
 .firstDiv {
     width: 600px !important;
-    height: fit-content;
+    height: 200px;
 }
 
 @media(max-width:767px) {
